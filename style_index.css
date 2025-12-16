@@ -1,0 +1,84 @@
+table{
+    border-collapse: collapse;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td{
+    width: 45px;
+    height: 45px;
+    padding: 0;
+}
+
+thead th{
+    background: #222;
+    color: white;
+    font-weight: bold;
+}
+
+td{
+    position: relative;
+}
+
+.button{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    transition: 0.25s;
+}
+
+.hit{
+    background: linear-gradient(135deg, #b30000, #ff1a1a) !important;
+}
+
+.miss{
+    background: linear-gradient(135deg, #003d99, #4da6ff) !important;
+}
+
+.ship{
+    background: linear-gradient(135deg, #0f6d00, #33cc33) !important;
+}
+
+.hitself{
+    background: linear-gradient(135deg, #5a0000, #990000) !important;
+}
+
+.missself{
+    background: linear-gradient(135deg, #1a1a80, #4d4dff) !important;
+}
+
+.disabled-grid{
+    pointer-events: none;
+    opacity: 0.4;
+    filter: grayscale(70%);
+}
+
+body{
+    background: radial-gradient(circle at top, #1a2a4e, #0f1624);
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+}
+
+h2, h4{
+    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+button[name="reset_total"]{
+    background: #bb0000;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: 0.25s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+body>*{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at top, #1a2a4e, #0f1624);
+    font-family: "Segoe UI", sans-serif;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 40px;
+    font-size: 2.2rem;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.5);
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+p span.status {
+    font-size: 1.4rem;
+}
+
+button {
+    background: linear-gradient(135deg, #0044aa, #1177ee);
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    margin: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.25s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+}
+
+button:hover:not(:disabled) {
+    transform: scale(1.07);
+    box-shadow: 0 5px 14px rgba(0,0,0,0.5);
+}
+
+button:disabled {
+    background: linear-gradient(135deg, #444, #555);
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+button[name="starting"] {
+    background: linear-gradient(135deg, #0a7a00, #21c121);
+}
+
+button[name="starting"]:hover:not(:disabled) {
+    transform: scale(1.07);
+}
+
+button[name="reset_total"] {
+    background: linear-gradient(135deg, #b30000, #ff1a1a);
+}
+
+button[name="reset_total"]:hover {
+    transform: scale(1.07);
+}
+
+form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+form button {
+    width: 240px;
+}
+
+body > * {
+    display: block;
+}

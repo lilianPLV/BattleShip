@@ -1,0 +1,85 @@
+
+body {
+    background: linear-gradient(135deg, #002f4b, #004f64);
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+    text-align: center;
+    padding: 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-box {
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 500px;
+    width: 90%;
+    border: 1px solid rgba(255,255,255,0.25);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.5);
+}
+
+.winner-message {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #ffdd33;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+
+button {
+    background: linear-gradient(135deg, #33cc33, #0f6d00);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0f6d00, #33cc33);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+.stats-box {
+    background: rgba(0,0,0,0.25);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 25px;
+    color: #fff;
+    font-size: 1rem;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+.stats-box table {
+    border-collapse: collapse;
+    margin: 10px auto 0 auto;
+    font-size: 1rem;
+}
+
+.stats-box th, .stats-box td {
+    border: 1px solid rgba(255,255,255,0.5);
+    padding: 8px 12px;
+}
+
+.stats-box th {
+    background: rgba(255,255,255,0.2);
+}
